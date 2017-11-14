@@ -26,7 +26,6 @@ class RequestRouter {
                 let json1 = JSON(json)
                 var users: [User] = []
                 for i in json1 {
-                    print(i.1)
                     users.append(User(json: i.1))
                 }
                 completion(users)
