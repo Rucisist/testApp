@@ -18,15 +18,6 @@ class User {
     let createdAt: String
     let updatedAt: String
     
-//    init(id: Int, firstName: String?, lastName: String?, email: String?, avatarUrl: URL?, createdAt: String, updatedAt: String) {
-//        self.id = id
-//        self.firstName = firstName
-//        self.lastName = lastName
-//        self.email = email
-//        self.avatarUrl = avatarUrl
-//        self.createdAt = createdAt
-//        self.updatedAt = updatedAt
-//    }
     
      init(json: JSON) {
         self.id = json["id"].intValue
@@ -50,11 +41,3 @@ class User {
 
 }
 
-//{
-//"id":1,
-//"first_name":"Foo",
-//"last_name":"Bar",
-//"email":"foo@bar.com",
-//"avatar_url":"",
-//"created_at":"2016-09-20T14:44:33.573Z",
-//"updated_at":"2016-09-20T14:44:33.573Z"
