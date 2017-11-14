@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserListTableViewCell" customModule="TestApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="543" height="155"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kk1-ZI-wri">
+                    <rect key="frame" x="155" y="16" width="372" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MockImage" translatesAutoresizingMaskIntoConstraints="NO" id="Zoh-gr-RjZ">
+                    <rect key="frame" x="16" y="16" width="123" height="123"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Zoh-gr-RjZ" secondAttribute="height" multiplier="1:1" id="fpf-2p-t4d"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2i-oq-neH">
+                    <rect key="frame" x="155" y="118" width="372" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Kk1-ZI-wri" secondAttribute="trailing" constant="16" id="2nc-fz-XQ7"/>
+                <constraint firstItem="k2i-oq-neH" firstAttribute="leading" secondItem="Zoh-gr-RjZ" secondAttribute="trailing" constant="16" id="48K-U9-c2d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="k2i-oq-neH" secondAttribute="bottom" constant="16" id="8kO-0e-1Yi"/>
+                <constraint firstItem="Zoh-gr-RjZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="IO8-dj-22O"/>
+                <constraint firstItem="Kk1-ZI-wri" firstAttribute="leading" secondItem="Zoh-gr-RjZ" secondAttribute="trailing" constant="16" id="LiV-nx-9s7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="k2i-oq-neH" secondAttribute="trailing" constant="16" id="Lsg-df-hgP"/>
+                <constraint firstItem="Zoh-gr-RjZ" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-16" id="hyK-8d-qOI"/>
+                <constraint firstItem="Zoh-gr-RjZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="kT4-gf-dA5"/>
+                <constraint firstItem="Kk1-ZI-wri" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="zlC-DZ-aTE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="userAvatarImageView" destination="Zoh-gr-RjZ" id="P67-eo-fyC"/>
+                <outlet property="userEmailLabel" destination="k2i-oq-neH" id="dGT-8B-tKw"/>
+                <outlet property="userFullNameLabel" destination="Kk1-ZI-wri" id="kEm-lw-5KG"/>
+            </connections>
+            <point key="canvasLocation" x="-105.5" y="-288.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MockImage" width="640" height="639"/>
+    </resources>
+</document>
